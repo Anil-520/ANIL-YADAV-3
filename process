@@ -1,0 +1,23 @@
+https://localhost:8834
+# Navigate to download location
+cd ~/Downloads
+
+# Install Nessus
+sudo dpkg -i Nessus-<version>.deb
+
+# Start the Nessus service
+sudo systemctl start nessusd
+
+# Enable it on startup
+sudo systemctl enable nessusd
+
+# Open Nessus in browser
+xdg-open https://localhost:8834
+
+localhost
+
+# On Windows
+ipconfig
+
+# On Linux
+ifconfig
